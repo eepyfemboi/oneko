@@ -94,12 +94,15 @@
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
 
-    let nekoFile = "https://sleepie.uk/oneko.gif"
+    let nekoFile = "oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+        nekoFile = curScript.dataset.cat
     }
-    nekoEl.style.backgroundImage = `url(${nekoFile})`;
+
+    let nekoImagePath = chrome.runtime.getURL(nekoFile);
+
+    nekoEl.style.backgroundImage = `url(${nekoImagePath})`;
 
     document.body.appendChild(nekoEl);
 

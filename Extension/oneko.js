@@ -84,7 +84,6 @@
 
   function init() {
     nekoEl.id = "oneko";
-    nekoEl.onclick = function(){window.open("https://sleepie.dev/oneko", '_blank').focus()}
     nekoEl.ariaHidden = true;
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";

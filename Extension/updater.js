@@ -1,4 +1,4 @@
-const localVersion = '1';
+const localVersion = '2';
 
 async function checkForUpdate() {
     try {

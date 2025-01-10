@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Oneko :3 (by eepyfemboi)",
-  "version": "1.0",
+  "version": "2.0",
   "description": "cat follow mouse (real)",
   "permissions": ["activeTab", "scripting", "alarms", "notifications"],
   "background": {
